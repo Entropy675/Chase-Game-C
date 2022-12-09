@@ -10,5 +10,6 @@ The code runs until one of the heros (Timmy/Harold) reaches the other side of th
 It then displays wheather Harold or Timmy escaped with the Emerald or tells you that they both died.
 
 Compilation Commands: make 
+
 Run Command: ./a5
 
