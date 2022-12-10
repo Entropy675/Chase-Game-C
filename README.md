@@ -19,11 +19,11 @@ The code runs until one of the heros (Timmy/Harold) reaches the other side of th
 The heros die if an enemy occupies the same square as them.
 The game then tells you the result of the simulation.
 
-Walk: [Enemy: takes a diagonal only step towards the nearist player] [Player: take a single step towards the ending line]
-Jump: [Enemy: takes multiple left or up (up to 7) steps towards player] [Player: take multiple steps (up to 7) towards the ending line]
-Slide: [Anyone: Move back (left) up to 4 steps.]
-Sleep: [Anyone: Do nothing.]
-Teleport: [Anyone: Teleports to a random location in the game]
+-Walk: [Enemy: takes a diagonal only step towards the nearist player] [Player: take a single step towards the ending line]
+-Jump: [Enemy: takes multiple left or up (up to 7) steps towards player] [Player: take multiple steps (up to 7) towards the ending line]
+-Slide: [Anyone: Move back (left) up to 4 steps.]
+-Sleep: [Anyone: Do nothing.]
+-Teleport: [Anyone: Teleports to a random location in the game]
 
 
 #### Behaviour Probabilities
