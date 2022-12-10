@@ -19,24 +19,24 @@ Slide: [Anyone: Move back (left) up to 4 steps.]
 Sleep: [Anyone: Do nothing.]
 Teleport: [Anyone: Teleports to a random location in the game]
 
-/*
-  Behaviour Probabilities
-============Timmy =============
-Walk 						            70%
-Jump 						            25% 
-Slide 						           5%
-============Harold ============
-Walk 						            30%
-Jump 					    	        30%
-Slide 				  		        10%
-Sleep 				          		30%
-============Dorcs =============
-Walk 				            		95%
-Jump 						             5%
-============Ninjas ============
-Jump 						            60%
-Teleport 					          40%
-*/
+
+#### Behaviour Probabilities
+##### ============Timmy =============
+###### Walk 						            70%
+###### Jump 						            25% 
+###### Slide 						           5%
+##### ============Harold ============
+###### Walk 						            30%
+###### Jump 					    	        30%
+###### Slide 				  		        10%
+###### Sleep 				          		30%
+##### ============Dorcs =============
+###### Walk 				            		95%
+###### Jump 						             5%
+##### ============Ninjas ============
+###### Jump 						            60%
+###### Teleport 					          40%
+
 
 Compilation Command: make 
 
