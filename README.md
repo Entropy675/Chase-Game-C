@@ -4,6 +4,12 @@ Author: Sibte Kazmi
 
 Included files: main.c, behaviour.c, chase.c, graphics.c, runner.c, defs.h, Makefile, readme.txt
 
+
+Compilation Command: make 
+
+Run Command: ./a5
+
+
 Description: 
 
 This code implements a game of chase. It creates runners, such as a Timmy, Harold, Dorcs, and Ninjas, which move around on a the Vale.
@@ -38,7 +44,4 @@ Teleport: [Anyone: Teleports to a random location in the game]
     + Teleport 					          40%
 
 
-Compilation Command: make 
-
-Run Command: ./a5
 
