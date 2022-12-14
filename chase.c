@@ -64,6 +64,7 @@ void drawVale2Screen(ValeType* vale)
 			char a = vale->grid[c][r];
 			scrPrt(&a, c, r); // should draw at the right location? 
 			//scrPrt("X", c, r);
+			scrPrt("  ", c, MAX_COL); // get rid of flicker
 		}
 		scrPrt("| ", c, MAX_COL); // this took way too long to figure out... added this so that the end looks nicer (no random chars)
 	}
