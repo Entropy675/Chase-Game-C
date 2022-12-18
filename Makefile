@@ -22,4 +22,4 @@ chase.o: chase.c runner.c main.c graphics.c defs.h
 	
 
 clean:
-	rm -f a5 $(OBJ) 
+	rm -f chasegame $(OBJ) 
