@@ -7,7 +7,7 @@ Included files: main.c, behaviour.c, chase.c, graphics.c, runner.c, defs.h, Make
 
 Compilation Command: make 
 
-Run Command: ./a5
+Run Command: ./chasegame
 
 
 Description: 
