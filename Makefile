@@ -2,8 +2,8 @@ OBJ = main.o graphics.o runner.o behaviour.o chase.o
 CC = gcc -Wall 
 LIB = -lpthread -lncurses
 
-a5:	$(OBJ)
-	$(CC) -o a5 $(OBJ) $(LIB)
+cg:	$(OBJ)
+	$(CC) -o cg $(OBJ) $(LIB)
 
 main.o:	main.c chase.c defs.h
 	$(CC) -c main.c
@@ -22,4 +22,4 @@ chase.o: chase.c runner.c main.c graphics.c defs.h
 	
 
 clean:
-	rm -f chasegame $(OBJ) 
+	rm -f cg $(OBJ) 
