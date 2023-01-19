@@ -121,16 +121,16 @@ int findDist2Rnr(PositionType p, RunnerType* r)
  * in: RunnerType* t - pointer to the enemy 
  * return: RunnerType* - pointer to the closest player 
  */ 
-RunnerType* closestPlrToEnmy(ChaseType* game, RunnerType* t) // takes in game and enemy
+void closestPlrToEnmy(ChaseType* game, RunnerType** r, RunnerType* t) // takes in game and enemy
 {
 	if(game->timmy->st == DEAD)
-		return game->harold;
+		*r = game->harold;
 	else if(game->harold->st == DEAD)
-		return game->timmy;
+		*r = game->timmy;
 	else if(findDist2Rnr(t->pos, game->timmy) < findDist2Rnr(t->pos, game->harold))
-		return game->timmy;
+		*r = game->timmy;
 	else
-		return game->harold;
+		*r = game->harold;
 }
 
 

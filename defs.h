@@ -96,7 +96,7 @@ void addRunner(ChaseType*, RunnerType*); // add runner to chases runners
 void killRunner(RunnerType*);
 int runnerBoundPosition(RunnerType* r);
 int findDist2Rnr(PositionType a, RunnerType* plr);
-RunnerType* closestPlrToEnmy(ChaseType*, RunnerType*);
+void closestPlrToEnmy(ChaseType*, RunnerType**, RunnerType*);
 
 /* Chase Functions */
 void initChase(ChaseType*);

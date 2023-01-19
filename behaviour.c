@@ -14,17 +14,18 @@ void b_walk(ChaseType* game, RunnerType* t)
 	if(t->moral == EVIL)
 	{
 		// move one row and one column in direction towards closest player
-		PositionType closePlr = (closestPlrToEnmy(game, t))->pos;
+		RunnerType* closePlr;
+		closestPlrToEnmy(game, &closePlr, t);
 		
 		if (sem_wait(&game->mutex) < 0)
 			exit(1);
 		
-		if (t->pos.row > closePlr.row) 
+		if (t->pos.row > closePlr->pos.row) 
 			t->pos.row--;
 		else 
 			t->pos.row++;
 		
-		if (t->pos.col > closePlr.col) 
+		if (t->pos.col > closePlr->pos.col) 
 			t->pos.col--;
 		else 
 			t->pos.col++;
@@ -72,17 +73,18 @@ void b_jump(ChaseType* game, RunnerType* t)
 	{
 		int b = randm(8); // num btwn [0,7]
 		
-		PositionType closePlr = closestPlrToEnmy(game, t)->pos;
+		RunnerType* closePlr;
+		closestPlrToEnmy(game, &closePlr, t);
 		
 		if (sem_wait(&game->mutex) < 0)
 			exit(1);
 		
-		if (t->pos.row > closePlr.row)
+		if (t->pos.row > closePlr->pos.row)
 			t->pos.row -= a;
 		else 
 			t->pos.row += a;
 		
-		if (t->pos.col > closePlr.col) 
+		if (t->pos.col > closePlr->pos.col) 
 			t->pos.col -= b;
 		else 
 			t->pos.col += b;
