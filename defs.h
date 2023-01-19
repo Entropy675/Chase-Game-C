@@ -33,14 +33,13 @@ typedef enum {ALIVE, DEAD, WALK_DEAD} StatusType;
 typedef struct {
   int row;
   int col;
-} PositionType;  // row major order, give me back my x and y ;-;
+} PositionType; 
 
 struct Chase;
 struct Runner;
 
 typedef void (*BehavFuncType)(struct Chase*, struct Runner*);
 // function pointer to any of the behaviour functions
-// (They all have the same input params, this is required for function pointers.)
 
 typedef struct {
   int prob;
@@ -49,7 +48,7 @@ typedef struct {
 
 typedef struct Runner {
   char avatar; // 'T' 'H' 'd' 'N' - the characters (in both meanings)
-  MoralType moral; // enum (literally just integers) alignment 
+  MoralType moral; // enum alignment 
   StatusType st; // life status, enum: alive, dead, or undead.
   PositionType pos; // position on the grid (row = y, col = x)
   BehavType *behavArr[MAX_ARR];
