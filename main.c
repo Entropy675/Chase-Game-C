@@ -29,14 +29,14 @@ int main()
 		char s[MAX_ARR];
 		
 		if(game->harold->pos.col == MAX_COL-1)
-			strcat(s, "Harold escaped with the Emerald!");
+			sprintf(s, "Harold escaped with the Emerald!");
 		else
-			strcat(s, "Timmy escaped with the Emerald!");
+			sprintf(s, "Timmy escaped with the Emerald!");
 		
 		if(game->harold->st == DEAD)
-			strcat(s, " Unfortunately, Harold got caught... ");
+			sprintf(s, " Unfortunately, Harold got caught... ");
 		else if(game->timmy->st == DEAD)
-			strcat(s, " Unfortunately, Timmy got caught... ");
+			sprintf(s, " Unfortunately, Timmy got caught... ");
 			
 		scrPrt(s, MAX_ROW + 1, 0);
 	}
