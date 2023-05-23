@@ -1,6 +1,7 @@
 # Chase Game C
 
-Author: Sibte Kazmi
+Author: Sibte Kazmi 
+
 OS: Linux
 
 Included files: main.c, behaviour.c, chase.c, graphics.c, runner.c, defs.h, Makefile, readme.txt
